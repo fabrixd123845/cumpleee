@@ -1,0 +1,90 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?birthday,party') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(255, 182, 193, 0.7); /* LightPink with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    color: #ff69b4; /* Rosado */
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); 
+    }
+    40% {
+        transform: translateY(-30px); 
+    }
+    60% {
+        transform: translateY(-15px); 
+    }
+}
+
+p.lead {
+    color: #9370db; /* Morado */
+    font-size: 1.5em;
+}
+
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.hidden {
+    display: none;
+}
+
+.img-fluid {
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.img-fluid.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-content {
+    background-color: rgba(255, 182, 193, 0.9); /* LightPink with transparency */
+}
